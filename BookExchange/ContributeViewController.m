@@ -1,18 +1,18 @@
 //
-//  FirstViewController.m
+//  SecondViewController.m
 //  BookExchange
 //
 //  Created by CY on 5/1/15.
 //  Copyright (c) 2015年 LINYC. All rights reserved.
 //
 
-#import "FirstViewController.h"
+#import "ContributeViewController.h"
 
-@interface FirstViewController ()
+@interface ContributeViewController ()
 
 @end
 
-@implementation FirstViewController
+@implementation ContributeViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
