@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		14831C56BFF1314EB64419DA /* libPods-BookExchange.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 12D3E55B87A50CEE64C10BBD /* libPods-BookExchange.a */; };
 		74297F1D1A5A86380004E8D5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 74297F1C1A5A86380004E8D5 /* main.m */; };
 		74297F201A5A86380004E8D5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 74297F1F1A5A86380004E8D5 /* AppDelegate.m */; };
 		74297F231A5A86380004E8D5 /* DiscoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74297F221A5A86380004E8D5 /* DiscoverViewController.m */; };
@@ -16,6 +17,13 @@
 		74297F2E1A5A86380004E8D5 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 74297F2C1A5A86380004E8D5 /* LaunchScreen.xib */; };
 		74297F3A1A5A86390004E8D5 /* BookExchangeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 74297F391A5A86390004E8D5 /* BookExchangeTests.m */; };
 		74297F451A5A8B710004E8D5 /* MindViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74297F441A5A8B710004E8D5 /* MindViewController.m */; };
+		74297F4B1A5B088A0004E8D5 /* ReplyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74297F4A1A5B088A0004E8D5 /* ReplyViewController.m */; };
+		74297F551A5BC9E70004E8D5 /* HeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 74297F541A5BC9E70004E8D5 /* HeaderView.xib */; };
+		74297F581A5BC9FB0004E8D5 /* HeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 74297F571A5BC9FB0004E8D5 /* HeaderView.m */; };
+		74297F5C1A5D158C0004E8D5 /* BookModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 74297F5B1A5D158C0004E8D5 /* BookModel.m */; };
+		74297F5F1A5D17840004E8D5 /* UserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 74297F5E1A5D17840004E8D5 /* UserModel.m */; };
+		74297F621A5D199D0004E8D5 /* ReplyModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 74297F611A5D199D0004E8D5 /* ReplyModel.m */; };
+		74297F651A5D1B420004E8D5 /* BookAuxiliaryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 74297F641A5D1B420004E8D5 /* BookAuxiliaryModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		12D3E55B87A50CEE64C10BBD /* libPods-BookExchange.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BookExchange.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		74297F171A5A86380004E8D5 /* BookExchange.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BookExchange.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		74297F1B1A5A86380004E8D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		74297F1C1A5A86380004E8D5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -46,6 +55,21 @@
 		74297F391A5A86390004E8D5 /* BookExchangeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BookExchangeTests.m; sourceTree = "<group>"; };
 		74297F431A5A8B710004E8D5 /* MindViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MindViewController.h; sourceTree = "<group>"; };
 		74297F441A5A8B710004E8D5 /* MindViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MindViewController.m; sourceTree = "<group>"; };
+		74297F491A5B088A0004E8D5 /* ReplyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReplyViewController.h; sourceTree = "<group>"; };
+		74297F4A1A5B088A0004E8D5 /* ReplyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReplyViewController.m; sourceTree = "<group>"; };
+		74297F541A5BC9E70004E8D5 /* HeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeaderView.xib; sourceTree = "<group>"; };
+		74297F561A5BC9FB0004E8D5 /* HeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeaderView.h; sourceTree = "<group>"; };
+		74297F571A5BC9FB0004E8D5 /* HeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeaderView.m; sourceTree = "<group>"; };
+		74297F5A1A5D158C0004E8D5 /* BookModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookModel.h; sourceTree = "<group>"; };
+		74297F5B1A5D158C0004E8D5 /* BookModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookModel.m; sourceTree = "<group>"; };
+		74297F5D1A5D17840004E8D5 /* UserModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserModel.h; sourceTree = "<group>"; };
+		74297F5E1A5D17840004E8D5 /* UserModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserModel.m; sourceTree = "<group>"; };
+		74297F601A5D199D0004E8D5 /* ReplyModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReplyModel.h; sourceTree = "<group>"; };
+		74297F611A5D199D0004E8D5 /* ReplyModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReplyModel.m; sourceTree = "<group>"; };
+		74297F631A5D1B420004E8D5 /* BookAuxiliaryModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookAuxiliaryModel.h; sourceTree = "<group>"; };
+		74297F641A5D1B420004E8D5 /* BookAuxiliaryModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookAuxiliaryModel.m; sourceTree = "<group>"; };
+		DE26FD3A855DFFBAE7961882 /* Pods-BookExchange.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookExchange.release.xcconfig"; path = "Pods/Target Support Files/Pods-BookExchange/Pods-BookExchange.release.xcconfig"; sourceTree = "<group>"; };
+		F5D6CBFDD4E113F6DC1B0A9A /* Pods-BookExchange.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookExchange.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BookExchange/Pods-BookExchange.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14831C56BFF1314EB64419DA /* libPods-BookExchange.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,12 +91,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		00E5967A744CC6C94B280FC6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				12D3E55B87A50CEE64C10BBD /* libPods-BookExchange.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		74297F0E1A5A86380004E8D5 = {
 			isa = PBXGroup;
 			children = (
 				74297F191A5A86380004E8D5 /* BookExchange */,
 				74297F361A5A86390004E8D5 /* BookExchangeTests */,
 				74297F181A5A86380004E8D5 /* Products */,
+				A151B9CEE1CEE3F975684807 /* Pods */,
+				00E5967A744CC6C94B280FC6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -87,6 +122,8 @@
 		74297F191A5A86380004E8D5 /* BookExchange */ = {
 			isa = PBXGroup;
 			children = (
+				74297F591A5D15450004E8D5 /* Model */,
+				74297F4C1A5BA05A0004E8D5 /* HeaderView */,
 				74297F1E1A5A86380004E8D5 /* AppDelegate.h */,
 				74297F1F1A5A86380004E8D5 /* AppDelegate.m */,
 				74297F211A5A86380004E8D5 /* DiscoverViewController.h */,
@@ -95,6 +132,8 @@
 				74297F251A5A86380004E8D5 /* ContributeViewController.m */,
 				74297F431A5A8B710004E8D5 /* MindViewController.h */,
 				74297F441A5A8B710004E8D5 /* MindViewController.m */,
+				74297F491A5B088A0004E8D5 /* ReplyViewController.h */,
+				74297F4A1A5B088A0004E8D5 /* ReplyViewController.m */,
 				74297F271A5A86380004E8D5 /* Main.storyboard */,
 				74297F2A1A5A86380004E8D5 /* Images.xcassets */,
 				74297F2C1A5A86380004E8D5 /* LaunchScreen.xib */,
@@ -129,6 +168,40 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		74297F4C1A5BA05A0004E8D5 /* HeaderView */ = {
+			isa = PBXGroup;
+			children = (
+				74297F561A5BC9FB0004E8D5 /* HeaderView.h */,
+				74297F571A5BC9FB0004E8D5 /* HeaderView.m */,
+				74297F541A5BC9E70004E8D5 /* HeaderView.xib */,
+			);
+			name = HeaderView;
+			sourceTree = "<group>";
+		};
+		74297F591A5D15450004E8D5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				74297F5A1A5D158C0004E8D5 /* BookModel.h */,
+				74297F5B1A5D158C0004E8D5 /* BookModel.m */,
+				74297F5D1A5D17840004E8D5 /* UserModel.h */,
+				74297F5E1A5D17840004E8D5 /* UserModel.m */,
+				74297F601A5D199D0004E8D5 /* ReplyModel.h */,
+				74297F611A5D199D0004E8D5 /* ReplyModel.m */,
+				74297F631A5D1B420004E8D5 /* BookAuxiliaryModel.h */,
+				74297F641A5D1B420004E8D5 /* BookAuxiliaryModel.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		A151B9CEE1CEE3F975684807 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F5D6CBFDD4E113F6DC1B0A9A /* Pods-BookExchange.debug.xcconfig */,
+				DE26FD3A855DFFBAE7961882 /* Pods-BookExchange.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -136,9 +209,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 74297F3D1A5A86390004E8D5 /* Build configuration list for PBXNativeTarget "BookExchange" */;
 			buildPhases = (
+				1CFD21D34CD41302D8102A9B /* Check Pods Manifest.lock */,
 				74297F131A5A86380004E8D5 /* Sources */,
 				74297F141A5A86380004E8D5 /* Frameworks */,
 				74297F151A5A86380004E8D5 /* Resources */,
+				419F1E56158F21F75D2A168F /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -212,6 +287,7 @@
 				74297F291A5A86380004E8D5 /* Main.storyboard in Resources */,
 				74297F2E1A5A86380004E8D5 /* LaunchScreen.xib in Resources */,
 				74297F2B1A5A86380004E8D5 /* Images.xcassets in Resources */,
+				74297F551A5BC9E70004E8D5 /* HeaderView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -224,14 +300,53 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1CFD21D34CD41302D8102A9B /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		419F1E56158F21F75D2A168F /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BookExchange/Pods-BookExchange-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		74297F131A5A86380004E8D5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74297F621A5D199D0004E8D5 /* ReplyModel.m in Sources */,
+				74297F581A5BC9FB0004E8D5 /* HeaderView.m in Sources */,
 				74297F261A5A86380004E8D5 /* ContributeViewController.m in Sources */,
+				74297F5F1A5D17840004E8D5 /* UserModel.m in Sources */,
+				74297F5C1A5D158C0004E8D5 /* BookModel.m in Sources */,
 				74297F201A5A86380004E8D5 /* AppDelegate.m in Sources */,
 				74297F231A5A86380004E8D5 /* DiscoverViewController.m in Sources */,
+				74297F651A5D1B420004E8D5 /* BookAuxiliaryModel.m in Sources */,
+				74297F4B1A5B088A0004E8D5 /* ReplyViewController.m in Sources */,
 				74297F1D1A5A86380004E8D5 /* main.m in Sources */,
 				74297F451A5A8B710004E8D5 /* MindViewController.m in Sources */,
 			);
@@ -355,6 +470,7 @@
 		};
 		74297F3E1A5A86390004E8D5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F5D6CBFDD4E113F6DC1B0A9A /* Pods-BookExchange.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = BookExchange/Info.plist;
@@ -365,6 +481,7 @@
 		};
 		74297F3F1A5A86390004E8D5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE26FD3A855DFFBAE7961882 /* Pods-BookExchange.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = BookExchange/Info.plist;
@@ -426,6 +543,7 @@
 				74297F3F1A5A86390004E8D5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		74297F401A5A86390004E8D5 /* Build configuration list for PBXNativeTarget "BookExchangeTests" */ = {
 			isa = XCConfigurationList;
@@ -434,6 +552,7 @@
 				74297F421A5A86390004E8D5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
