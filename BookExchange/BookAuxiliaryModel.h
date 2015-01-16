@@ -7,10 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "JSONModel.h"
+
 //书Model的附属model
-@interface BookAuxiliaryModel : NSObject
-@property (nonatomic,assign) NSUInteger bookId;
+@interface BookAuxiliaryModel : JSONModel
 @property (nonatomic,assign) NSUInteger viewCount;//阅览量
 @property (nonatomic,assign) NSUInteger replyCount;//回复数
-@property (nonatomic,assign) NSUInteger userId;//贡献者
+@property (nonatomic,copy) NSString *userName;//贡献者
 @end

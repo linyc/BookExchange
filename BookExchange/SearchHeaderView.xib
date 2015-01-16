@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SearchHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="xAF-4U-Rdk">
+                    <rect key="frame" x="8" y="54" width="584" height="29"/>
+                    <segments>
+                        <segment title="新贡献"/>
+                        <segment title="热门"/>
+                        <segment title="随机"/>
+                    </segments>
+                    <connections>
+                        <action selector="segmentedChanged:" destination="iN0-l3-epB" eventType="valueChanged" id="Xia-EW-66C"/>
+                    </connections>
+                </segmentedControl>
+                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L7q-gO-6B6">
+                    <rect key="frame" x="546" y="7" width="46" height="30"/>
+                    <state key="normal" title="取消">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="btnCancelClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="XLK-Yl-zhu"/>
+                    </connections>
+                </button>
+                <searchBar contentMode="redraw" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="L4Z-n9-XwF">
+                    <rect key="frame" x="0.0" y="0.0" width="533" height="44"/>
+                    <textInputTraits key="textInputTraits"/>
+                </searchBar>
+            </subviews>
+            <color key="backgroundColor" red="0.78535353535353536" green="0.78535353535353536" blue="0.78535353535353536" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="L4Z-n9-XwF" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="hjh-97-IXh"/>
+                <constraint firstItem="L7q-gO-6B6" firstAttribute="leading" secondItem="L4Z-n9-XwF" secondAttribute="trailing" constant="8" id="qVG-fv-fus"/>
+                <constraint firstAttribute="trailing" secondItem="L7q-gO-6B6" secondAttribute="trailing" constant="13" id="sMs-1l-8GM"/>
+                <constraint firstAttribute="trailing" secondItem="xAF-4U-Rdk" secondAttribute="trailing" constant="8" id="tKr-zB-2PA"/>
+            </constraints>
+            <connections>
+                <outlet property="searchBar" destination="L4Z-n9-XwF" id="eFV-1n-NTW"/>
+            </connections>
+        </view>
+    </objects>
+</document>

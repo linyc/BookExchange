@@ -7,52 +7,49 @@
 //
 
 #import "ReplyViewController.h"
-#import "HeaderView.h"
+#import "TitleHeaderView.h"
 
 #define FONT_SIZE 16.0f
+#define CELL_CONTENT_MARGIN 10.0f
+#define CELL_HEIGHT 90.0f
 
 @interface ReplyViewController ()
-@property (nonatomic,strong) HeaderView *headerView;
+@property (nonatomic,strong) TitleHeaderView *headerView;
 @property (nonatomic,strong) NSMutableArray *tableData;
+
+@property (nonatomic,strong) NSURLSession *urlSession;
 @end
 
 @implementation ReplyViewController{
     CGFloat CELL_WIDTH;
-    CGFloat CELL_CONTENT_MARGIN;
-    CGFloat CELL_HEIGHT;
     
     NSIndexPath *currentIndexPath;
+    
+    NSString *getString;
+}
+
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        NSURLSessionConfiguration *sessionConfig = [NSURLSessionConfiguration defaultSessionConfiguration];
+        self.urlSession = [NSURLSession sessionWithConfiguration:sessionConfig];
+    }
+    return self;
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     CELL_WIDTH = [UIScreen mainScreen].bounds.size.width;
-    CELL_CONTENT_MARGIN = 10.0f;
-    CELL_HEIGHT = 90;
     
-    self.tableData =  @[@"1\n2\n3\n4\n5\n6", @"123456789012345678901234567890123456789012345678901234567890", @"1\n2", @"1\n2\n3", @"1"];
+    self.tableData =  @[@"1\n2\n3\n4\n5\n6", @"123456789012345678901234567890123456789012345678901234567890", @"1\n2", @"1\n2\n3", @"1",@"56789012345678901234567890123456789012345678901234567890", @"1\n2\n3"];
     
-//    self.tableData = [[NSMutableArray alloc] init];
-//    
-//    [self.tableData addObject:@"Happiness is having a large, loving, caring, close-knit family in another city.\n\n\t\t-George Burns (1896 - 1996)"];
-//    [self.tableData addObject:@"When I am abroad, I always make it a rule never to criticize or attack the government of my own country. I make up for lost time when I come home.\n\n\t\t-Sir Winston Churchill (1874 - 1965)"];
-//    [self.tableData addObject:@"After two years in Washington, I often long for the realism and sincerity of Hollywood.\n\n\t\t-Fred Thompson, Speech before the Commonwealth Club of California"];
-//    [self.tableData addObject:@"It is a profitable thing, if one is wise, to seem foolish.\n\n\t\t-Aeschylus (525 BC - 456 BC)"];
-//    [self.tableData addObject:@"Bill Gates is a very rich man today... and do you want to know why? The answer is one word: versions.\n\n\t\t-Dave Barry"];
-//    [self.tableData addObject:@"At the worst, a house unkept cannot be so distressing as a life unlived.\n\n\t\t-Dame Rose Macaulay (1881 - 1958)"];
-//    [self.tableData addObject:@"It is curious that physical courage should be so common in the world and moral courage so rare.\n\n\t\t-Mark Twain (1835 - 1910)"];
-//    [self.tableData addObject:@"The knowledge of the world is only to be acquired in the world, and not in a closet.\n\n\t\t-Lord Chesterfield (1694 - 1773), Letters to His Son, 1746, published 1774"];
-//    [self.tableData addObject:@"What lies behind us and what lies before us are tiny matters compared to what lies within us.\n\n\t\t-Ralph Waldo Emerson (1803 - 1882), (attributed)"];
     
-
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
+//    self.headerView = [HeaderView instancetFromNib];
+//    self.headerView.backgroundColor = [UIColor colorWithRed:0.59 green:0.85 blue:0.27 alpha:1];
     
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-    
-    self.headerView = [HeaderView instancetFromNib];
-    self.headerView.backgroundColor = [UIColor colorWithRed:0.59 green:0.85 blue:0.27 alpha:1];
+    UIView *headerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, 60)];
+    headerView.backgroundColor = [UIColor colorWithRed:0.59 green:0.85 blue:0.27 alpha:1];
     
     UILabel *lblBookName = [[UILabel alloc] initWithFrame:CGRectMake(2.0, 2.0, [UIScreen mainScreen].bounds.size.width-4, 58)];
     lblBookName.numberOfLines = 2;
@@ -60,15 +57,18 @@
     //stickyLabel.backgroundColor = [UIColor colorWithRed:1 green:0.749 blue:0.976 alpha:1];
     lblBookName.textAlignment = NSTextAlignmentCenter;
     lblBookName.text = @"摩托车修理店的未来工作哲学";
-    [self.headerView addSubview:lblBookName];
+//    [self.headerView addSubview:lblBookName];
+    [headerView addSubview:lblBookName];
     
-    [self.tableView setParallaxHeaderView:self.headerView mode:VGParallaxHeaderModeFill height:60];
     
-    self.tableView.parallaxHeader.stickyViewPosition = VGParallaxHeaderStickyViewPositionTop;
+//    [self.tableView setParallaxHeaderView:self.headerView mode:VGParallaxHeaderModeFill height:60];
+//    
+//    self.tableView.parallaxHeader.stickyViewPosition = VGParallaxHeaderStickyViewPositionTop;
+    self.tableView.tableHeaderView = headerView;
 }
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
-    [self.tableView shouldPositionParallaxHeader];
+//    [self.tableView shouldPositionParallaxHeader];
     
     // Log Parallax Progress
     //NSLog(@"Progress: %f", scrollView.parallaxHeader.progress);
@@ -194,7 +194,8 @@
     
     CGSize constraint = CGSizeMake(CELL_WIDTH - (CELL_CONTENT_MARGIN * 2), 20000.0f);
     
-    CGSize size = [text sizeWithFont:[UIFont systemFontOfSize:FONT_SIZE] constrainedToSize:constraint lineBreakMode:UILineBreakModeWordWrap];
+//    CGSize size = [text sizeWithFont:[UIFont systemFontOfSize:FONT_SIZE] constrainedToSize:constraint lineBreakMode:UILineBreakModeWordWrap];
+    CGSize size = [text boundingRectWithSize:constraint options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:FONT_SIZE]} context:nil].size;
     
     if (!label){
         label = (UILabel*)[cell viewWithTag:2014];
@@ -226,7 +227,7 @@
     lblFloor.text = [NSString stringWithFormat:@"%ld00楼",indexPath.row+1];
     
     [label setFrame:CGRectMake(CELL_CONTENT_MARGIN, 34, CELL_WIDTH - (CELL_CONTENT_MARGIN * 2), MAX(size.height, 23.0f))];
-    [btnLike setFrame:CGRectMake(CELL_WIDTH - (20 + CELL_CONTENT_MARGIN),label.frame.origin.y + label.frame.size.height + 4, 21, 21)];
+    [btnLike setFrame:CGRectMake(CELL_WIDTH - (20 + CELL_CONTENT_MARGIN),CGRectGetMaxY(label.frame) + 4, 21, 21)];
     
     return cell;
 }
@@ -251,7 +252,8 @@
     
     CGSize constraint = CGSizeMake(CELL_WIDTH - (CELL_CONTENT_MARGIN * 2), 20000.0f);
     
-    CGSize size = [text sizeWithFont:[UIFont systemFontOfSize:FONT_SIZE] constrainedToSize:constraint lineBreakMode:UILineBreakModeWordWrap];
+//    CGSize size = [text sizeWithFont:[UIFont systemFontOfSize:FONT_SIZE] constrainedToSize:constraint lineBreakMode:UILineBreakModeWordWrap];
+    CGSize size = [text boundingRectWithSize:constraint options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:FONT_SIZE]} context:nil].size;
     
     CGFloat height = MAX(size.height, 20.0f);
     
@@ -261,9 +263,23 @@
 {
     UITableViewCell *cell = (UITableViewCell*)[[sender superview] superview];
     currentIndexPath = [self.tableView indexPathForCell:cell];
+//
+//    [[[UIAlertView alloc] initWithTitle:@"OH you click" message:[NSString stringWithFormat:@"%lu",currentIndexPath.row] delegate:self cancelButtonTitle:@"I know" otherButtonTitles:@"second btn", nil] show];
+    NSLog(@"%lu",currentIndexPath.row);
+    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"http://192.168.1.18:802/BookHandler.ashx?NO=%lu",currentIndexPath.row]];
+    NSURLRequest *request = [NSURLRequest requestWithURL:url];
+    NSURLSessionDataTask *dataTask = [[NSURLSession sharedSession] dataTaskWithRequest:request completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
+        if (!error) {
+            getString = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+            NSLog(@"%@",getString);
+        }
+        else{
+            NSLog(@"error: %@",error.localizedDescription);
+        }
+    }];
+    [dataTask resume];
     
-    [[[UIAlertView alloc] initWithTitle:@"OH you click" message:[NSString stringWithFormat:@"%lu",currentIndexPath.row] delegate:self cancelButtonTitle:@"I know" otherButtonTitles:@"second btn", nil] show];
-    
+    [[[UIAlertView alloc] initWithTitle:@"OH you Data" message:getString delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil] show];
 }
 
 /*

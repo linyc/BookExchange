@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface HeaderView : UIView
+@interface TitleHeaderView : UIView
 
 +(instancetype)instancetFromNib;
 

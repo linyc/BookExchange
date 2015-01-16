@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SearchHeaderView.h"
 
-@interface DiscoverViewController : UITableViewController
+@interface DiscoverViewController : UITableViewController<SearchHeaderViewDelegate>
 
 
 @end

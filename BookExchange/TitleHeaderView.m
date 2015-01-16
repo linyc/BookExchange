@@ -6,9 +6,9 @@
 //  Copyright (c) 2015年 LINYC. All rights reserved.
 //
 
-#import "HeaderView.h"
+#import "TitleHeaderView.h"
 
-@implementation HeaderView
+@implementation TitleHeaderView
 
 +(instancetype)instancetFromNib
 {
@@ -17,10 +17,10 @@
         if (views[0] != nil) {
             return [views firstObject];
         }
-        return [[HeaderView alloc]init];
+        return [[TitleHeaderView alloc]init];
     }
     
-    return [[HeaderView alloc] init];
+    return [[TitleHeaderView alloc] init];
 }
 
 @end

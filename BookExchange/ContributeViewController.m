@@ -7,9 +7,11 @@
 //
 
 #import "ContributeViewController.h"
+
 #define FONT_SIZE 14.0f
 #define CELL_CONTENT_WIDTH 320.0f
 #define CELL_CONTENT_MARGIN 10.0f
+
 @interface ContributeViewController ()
 
 @end
@@ -33,8 +35,6 @@
     [items addObject:@"It is curious that physical courage should be so common in the world and moral courage so rare.\n\n\t\t-Mark Twain (1835 - 1910)"];
     [items addObject:@"The knowledge of the world is only to be acquired in the world, and not in a closet.\n\n\t\t-Lord Chesterfield (1694 - 1773), Letters to His Son, 1746, published 1774"];
     [items addObject:@"What lies behind us and what lies before us are tiny matters compared to what lies within us.\n\n\t\t-Ralph Waldo Emerson (1803 - 1882), (attributed)"];
-    
-
 }
 
 - (void)didReceiveMemoryWarning {

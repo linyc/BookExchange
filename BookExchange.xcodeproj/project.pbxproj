@@ -18,12 +18,15 @@
 		74297F3A1A5A86390004E8D5 /* BookExchangeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 74297F391A5A86390004E8D5 /* BookExchangeTests.m */; };
 		74297F451A5A8B710004E8D5 /* MindViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74297F441A5A8B710004E8D5 /* MindViewController.m */; };
 		74297F4B1A5B088A0004E8D5 /* ReplyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74297F4A1A5B088A0004E8D5 /* ReplyViewController.m */; };
-		74297F551A5BC9E70004E8D5 /* HeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 74297F541A5BC9E70004E8D5 /* HeaderView.xib */; };
-		74297F581A5BC9FB0004E8D5 /* HeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 74297F571A5BC9FB0004E8D5 /* HeaderView.m */; };
+		74297F551A5BC9E70004E8D5 /* TitleHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 74297F541A5BC9E70004E8D5 /* TitleHeaderView.xib */; };
+		74297F581A5BC9FB0004E8D5 /* TitleHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 74297F571A5BC9FB0004E8D5 /* TitleHeaderView.m */; };
 		74297F5C1A5D158C0004E8D5 /* BookModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 74297F5B1A5D158C0004E8D5 /* BookModel.m */; };
 		74297F5F1A5D17840004E8D5 /* UserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 74297F5E1A5D17840004E8D5 /* UserModel.m */; };
 		74297F621A5D199D0004E8D5 /* ReplyModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 74297F611A5D199D0004E8D5 /* ReplyModel.m */; };
 		74297F651A5D1B420004E8D5 /* BookAuxiliaryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 74297F641A5D1B420004E8D5 /* BookAuxiliaryModel.m */; };
+		747159281A676CBC00527857 /* SearchHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 747159271A676CBC00527857 /* SearchHeaderView.xib */; };
+		7471592B1A676E4C00527857 /* SearchHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7471592A1A676E4C00527857 /* SearchHeaderView.m */; };
+		749389F61A6827FC009A7B3B /* Books.m in Sources */ = {isa = PBXBuildFile; fileRef = 749389F51A6827FC009A7B3B /* Books.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,9 +60,9 @@
 		74297F441A5A8B710004E8D5 /* MindViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MindViewController.m; sourceTree = "<group>"; };
 		74297F491A5B088A0004E8D5 /* ReplyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReplyViewController.h; sourceTree = "<group>"; };
 		74297F4A1A5B088A0004E8D5 /* ReplyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReplyViewController.m; sourceTree = "<group>"; };
-		74297F541A5BC9E70004E8D5 /* HeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeaderView.xib; sourceTree = "<group>"; };
-		74297F561A5BC9FB0004E8D5 /* HeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeaderView.h; sourceTree = "<group>"; };
-		74297F571A5BC9FB0004E8D5 /* HeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeaderView.m; sourceTree = "<group>"; };
+		74297F541A5BC9E70004E8D5 /* TitleHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TitleHeaderView.xib; sourceTree = "<group>"; };
+		74297F561A5BC9FB0004E8D5 /* TitleHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TitleHeaderView.h; sourceTree = "<group>"; };
+		74297F571A5BC9FB0004E8D5 /* TitleHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TitleHeaderView.m; sourceTree = "<group>"; };
 		74297F5A1A5D158C0004E8D5 /* BookModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookModel.h; sourceTree = "<group>"; };
 		74297F5B1A5D158C0004E8D5 /* BookModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookModel.m; sourceTree = "<group>"; };
 		74297F5D1A5D17840004E8D5 /* UserModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserModel.h; sourceTree = "<group>"; };
@@ -68,6 +71,11 @@
 		74297F611A5D199D0004E8D5 /* ReplyModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReplyModel.m; sourceTree = "<group>"; };
 		74297F631A5D1B420004E8D5 /* BookAuxiliaryModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookAuxiliaryModel.h; sourceTree = "<group>"; };
 		74297F641A5D1B420004E8D5 /* BookAuxiliaryModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookAuxiliaryModel.m; sourceTree = "<group>"; };
+		747159271A676CBC00527857 /* SearchHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchHeaderView.xib; sourceTree = "<group>"; };
+		747159291A676E4C00527857 /* SearchHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchHeaderView.h; sourceTree = "<group>"; };
+		7471592A1A676E4C00527857 /* SearchHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchHeaderView.m; sourceTree = "<group>"; };
+		749389F41A6827FC009A7B3B /* Books.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Books.h; sourceTree = "<group>"; };
+		749389F51A6827FC009A7B3B /* Books.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Books.m; sourceTree = "<group>"; };
 		DE26FD3A855DFFBAE7961882 /* Pods-BookExchange.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookExchange.release.xcconfig"; path = "Pods/Target Support Files/Pods-BookExchange/Pods-BookExchange.release.xcconfig"; sourceTree = "<group>"; };
 		F5D6CBFDD4E113F6DC1B0A9A /* Pods-BookExchange.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookExchange.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BookExchange/Pods-BookExchange.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -171,9 +179,12 @@
 		74297F4C1A5BA05A0004E8D5 /* HeaderView */ = {
 			isa = PBXGroup;
 			children = (
-				74297F561A5BC9FB0004E8D5 /* HeaderView.h */,
-				74297F571A5BC9FB0004E8D5 /* HeaderView.m */,
-				74297F541A5BC9E70004E8D5 /* HeaderView.xib */,
+				74297F561A5BC9FB0004E8D5 /* TitleHeaderView.h */,
+				74297F571A5BC9FB0004E8D5 /* TitleHeaderView.m */,
+				74297F541A5BC9E70004E8D5 /* TitleHeaderView.xib */,
+				747159291A676E4C00527857 /* SearchHeaderView.h */,
+				7471592A1A676E4C00527857 /* SearchHeaderView.m */,
+				747159271A676CBC00527857 /* SearchHeaderView.xib */,
 			);
 			name = HeaderView;
 			sourceTree = "<group>";
@@ -181,6 +192,8 @@
 		74297F591A5D15450004E8D5 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				749389F41A6827FC009A7B3B /* Books.h */,
+				749389F51A6827FC009A7B3B /* Books.m */,
 				74297F5A1A5D158C0004E8D5 /* BookModel.h */,
 				74297F5B1A5D158C0004E8D5 /* BookModel.m */,
 				74297F5D1A5D17840004E8D5 /* UserModel.h */,
@@ -284,10 +297,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				747159281A676CBC00527857 /* SearchHeaderView.xib in Resources */,
 				74297F291A5A86380004E8D5 /* Main.storyboard in Resources */,
 				74297F2E1A5A86380004E8D5 /* LaunchScreen.xib in Resources */,
 				74297F2B1A5A86380004E8D5 /* Images.xcassets in Resources */,
-				74297F551A5BC9E70004E8D5 /* HeaderView.xib in Resources */,
+				74297F551A5BC9E70004E8D5 /* TitleHeaderView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,8 +353,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				74297F621A5D199D0004E8D5 /* ReplyModel.m in Sources */,
-				74297F581A5BC9FB0004E8D5 /* HeaderView.m in Sources */,
+				74297F581A5BC9FB0004E8D5 /* TitleHeaderView.m in Sources */,
 				74297F261A5A86380004E8D5 /* ContributeViewController.m in Sources */,
+				7471592B1A676E4C00527857 /* SearchHeaderView.m in Sources */,
 				74297F5F1A5D17840004E8D5 /* UserModel.m in Sources */,
 				74297F5C1A5D158C0004E8D5 /* BookModel.m in Sources */,
 				74297F201A5A86380004E8D5 /* AppDelegate.m in Sources */,
@@ -349,6 +364,7 @@
 				74297F4B1A5B088A0004E8D5 /* ReplyViewController.m in Sources */,
 				74297F1D1A5A86380004E8D5 /* main.m in Sources */,
 				74297F451A5A8B710004E8D5 /* MindViewController.m in Sources */,
+				749389F61A6827FC009A7B3B /* Books.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
